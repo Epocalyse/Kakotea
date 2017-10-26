@@ -18,15 +18,16 @@
   
   	<div id="root" class="page">
   		<nav id ="nav-main" class="nav-main">
-			<a class="ui-logo" href="logo">
-				<img src="logo" alt="logo" style="width:auto;"></img>
-			</a><!--logo website-->
 		 <header id="head">
 			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-			<a href="#login">Login</a>
-			<a class="active" href="products.asp">Products</a>
-			<a href="#checkout">Checkout</a>
+			<a class="active" href="login.xhtml">Login</a>
+			<a href="index.xhtml">Products</a>
+			<a href="basket.xhtml">Basket</a>
 		 </header>
+		<a class="ui-logo" href="logo">
+				<img src="logo.png" alt="logo.png" style="width:auto;"></img>
+		</a><!--logo website-->
+		<h3 id="user"></h3>
   		</nav>
 		
 	<section id="logbox">
@@ -35,10 +36,14 @@
 			<button type="button">Register</button>
 		</nav>
 	<div id= "signin">
-			<h1>Login</h1> 
-			<h3>Email: </h3><input type="text" name="Email"><br></br></input>
-			<h3>Password/Key: </h3><input type="text" name="Key"><br></br></input>
-			<button type="button">Log in</button>
+		<h1>Login</h1>
+		<form action="/action_page.php">
+			<h3>Email:</h3> 
+			<input type="text" name="Email" required = "true"></input>
+			<h3>Password:</h3> 
+			<input type="password" name="Password" required = "true"></input>
+			<input type="submit"></input>
+		</form>
 		</div>
 	</section>
 
