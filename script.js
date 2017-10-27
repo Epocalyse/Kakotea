@@ -27,6 +27,30 @@ function checkData() {
    return true;
 }
 
+/*
+@WebServlet("/myservlet")
+public class MyServlet extends HttpServlet {
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        MyClass myClass = new MyClass();
+
+        if (request.getParameter("button1") != null) {
+            myClass.method1();
+        } else if (request.getParameter("button2") != null) {
+            myClass.method2();
+        } else if (request.getParameter("button3") != null) {
+            myClass.method3();
+        } else {
+            // ???
+        }
+
+        request.getRequestDispatcher("/WEB-INF/some-result.jsp").forward(request, response);
+    }
+
+}
+*/
+
 function addUser(){
 	
 }
@@ -39,7 +63,7 @@ function displayUser(){
 	
 }
 
-function viewSortofProducts(){
+function diplayProducts(int x){
 	
 }
 
@@ -54,31 +78,6 @@ function viewBasket(){
 function submitBasket(){
 	
 }
-/*
-function vertifiedorder(){
-	if (){
-		alert("Thank you for ordering!");
-		document.getElementById('error').innerHTML = "Thank you for ordering!";
-	}
-	var link = "mailto:"+(document.getElementById('email').value)+"@example.com"
-             + "?cc=myCCaddress@example.com"
-             + "&subject=" + escape("Kakotea Order Confirmation")
-             + "&body=" + "Dear " + () + + "Thank you for ordering from " + escape(document.getElementById('myText').value)
-    ;
-
-    window.location.href = link;
-}
-
-function sendMailKey() {
-    var link = "mailto:"+(document.getElementById('email').value)+"@example.com"
-             + "?cc=myCCaddress@example.com"
-             + "&subject=" + escape("Kakotea Key")
-             + "&body=" + escape(document.getElementById('myText').value)
-    ;
-
-    window.location.href = link;
-}
-*/
 
 
 function scream(){
