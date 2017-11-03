@@ -23,7 +23,6 @@
   		<nav id ="nav-main" class="nav-main">
 		 <header id="head">
 			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-			<a href="login.xhtml">Login</a>
 			<a href="index.xhtml">Products</a>
 			<a class="active" href="basket.xhtml">Basket</a>
 			<a href="orders.xhtml">Orders</a>
@@ -39,12 +38,24 @@
 		<p id="confirmation"></p>
 
 	<section id="basketpage">
-	
-		<h1>Basket</h1>
-		<ul>
-			<li></li>
-			<button>Remove Item</button>
-		</ul>
+		<class id="Basket">
+			<h1>Basket</h1>
+			<ul>
+				<li></li>
+				<button>Remove Item</button>
+			</ul>
+		
+		</class>
+		<div id="userdetails">
+			<form action="http://127.0.0.1:8002/addUser" method="get">
+				<h3>Enter your email: </h3><input type="email" name="Email" required = "true"></input>
+				<h3>First Name: </h3><input type="text" name="PhoneNo" required = "true"></input>
+				<h3>Password: </h3><input type="password" name="Password" required = "true"></input>
+				<h3>First Name: </h3><input type="text" name="FirstName" required = "true"></input>
+				<h3>Surname: </h3><input type="text" name="LastName" required = "true"></input>
+				<h3>Address: </h3><input type="text" name="Address" required = "true"></input>
+			</form>
+		</div>
 		<button type="button" onclick="vertifiedorder(); return false">Checkout</button>
 		<p id="notification">Order Confirmed.</p>
 		
