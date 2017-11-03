@@ -251,13 +251,6 @@ footer {
   height: 17px;
   background: url(&quot;delete-icn.svg&quot;) no-repeat center;
 }
- 
-
-.image {
-  margin-right: 50px;
-  width: 10%;
-  height: auto;
-}
 
 .description {
   padding-top: 10px;
