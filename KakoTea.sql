@@ -21,6 +21,7 @@ CREATE TABLE Orders (
 	OrderNum int NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	ProdID int NOT NULL,
 	E_mail varchar(255),
+	LiveOrder bit,
 	FOREIGN KEY (ProdID) REFERENCES Products(ProductID),
 	FOREIGN KEY (E_mail) REFERENCES Users(Email)
 );
@@ -30,9 +31,3 @@ VALUES ('Red Porcelain Tea Set', '', 55.00);
 
 INSERT INTO Products (ProductName, ProductDes, ProductPrice)
 VALUES ('Blue Ceramic Tea and Sushi Set', '', 80.00);
-
-INSERT INTO Users (Email, Password, Address, FirstName, LastName)
-VALUES ('hello@gmail.com', 'password', '1, 1st Street', 'Slim', 'Shady');
-
-INSERT INTO Orders (ProdID, E_mail)
-VALUES (1, 'hello@gmail.com');
