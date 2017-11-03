@@ -125,6 +125,9 @@ a.button {
 
     text-decoration: none;
     color: initial;
+	padding: 3px;
+	background-color: 4CAF50;
+	margin: 15px;
 }
 
 .basketinfo {
@@ -250,16 +253,6 @@ a.button {
   padding-top: 30px;
   margin-right: 60px;
 }
-.delete-btn {
-  display: inline-block;
-  Cursor: pointer;
-}
-
-.delete-btn {
-  width: 18px;
-  height: 17px;
-  background: url(&quot;delete-icn.svg&quot;) no-repeat center;
-}
 
 .description {
   padding-top: 10px;
@@ -326,6 +319,20 @@ input:focus {
   font-weight: 300;
 }
 
+form {
+	box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+	color: #FFFFFF;
+	margin: 15px;
+	padding: 15;
+	text-align: center;
+}
+
+form h3{
+	font-size: 18px;
+	font-weight: 300;
+	color: black;
+}
+
 @media (max-width: 600px) {
 	.shopping-cart {
 		width: 100%;
@@ -347,4 +354,6 @@ input:focus {
 	.buttons {
 		margin-right: 20px;
 	}
+	
+	.userdetails
 }
