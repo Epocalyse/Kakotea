@@ -4,21 +4,21 @@ body {
 
 /*Nav-main navigation bar*/
 @media screen and (max-width: 600px) {
-  .nav-main a:not(:first-child) {display: none;}
-  .nav-main a.icon {
+  #head a:not(:first-child) {display: none;}
+  #head a.icon {
     float: left;
     display: block;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .nav-main.responsive {position: relative;}
-  .nav-main.responsive .icon {
+  #head.responsive {position: relative;}
+  #head.responsive .icon {
     position: fixed;
     left: 7px;
     top: 7px;
   }
-  .nav-main.responsive a {
+  #head.responsive a {
     float: none;
     display: block;
     text-align: left;
@@ -30,15 +30,16 @@ body {
   overflow: hidden;
   background-color: #33403a;
   position: fixed;
-  width: 100%
+  width: 100%;
+  top: 0;
 }
 
-.nav-main a {
+#head a {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 7px;
+  padding: 7px 7px;
   font-size: 17px;
   text-decoration: none;
 }
@@ -49,14 +50,14 @@ body {
 	cursor: default;
 }
 
-.nav-main a:hover {
+#head a:hover {
   background-color: #7e8c86;
   color: black;
   font-weight: bold;
   text-decoration:none;
 }
 
-.nav-main .icon {
+#head .icon {
     display: none;
 } 
 
@@ -65,32 +66,66 @@ body {
 	height:35px;
 	pointer-events: none;
     cursor: default;
+	padding: 0px;
+	float: right;
+	pointer-events: none;
+	cursor: default;
+	padding-right: 15px;
 }
 /*End of nav-main*/
 /*Products*/
 
-#products {
-    display: -webkit-flex;
-    display: flex;  
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    text-align: center;
-	width: 100%;
+.basketinfo {
+	float: right;
+	width: 40;
+	
 }
 
-#products > * {
+.product {
+	float: left;
+	width: 30%;
+	padding: 15px;
+	margin: 15px;
+	background-color: #7e8c86;
+}
+
+#product h1 {
+	float: center;
+}
+
+#allproducts:after {
+	content: "";
+	display: table;
+	clear:both;
+}
+
+@media (max-width: 600px){
+	.product{
+		width: 100%;
+	}
+}
+
+footer {
+	background-color: #dddddd;
     padding: 15px;
-    -webkit-flex: 1 100%;
-    flex: 1 100%;
+    text-align: center;
+	bottom: 0px;
 }
 
-.productinfo {
-    text-align: left;
+
+/*Login page*/
+#logbox {
+	border: 0;
+	width: 400px;
+    margin: 0;
+	padding: 10px;
+    min-width: 400px;
 }
 
-@media all and (min-width: 600px) {
-	.product image {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
-    .productinfo {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
-	footer {-webkit-order:3;order:3;}
+@media only screen and (max-width: 420px) {
+	#logbox {
+		min-width: 95%;
+		width: 95%;
+		margin: auto;
+	}
 }
-
